@@ -80,7 +80,7 @@ html {
 }
 
 /* ----- TYPOGRAPHY -----  */
-h1, h2, h6, nav, .tileBtn, input[type="submit"] {
+h1, h2, h6, nav, .tileBtn, #subBtnWrapper button {
 	font-family: var(--orb-font);
 }
 
@@ -108,9 +108,17 @@ h3, nav {
 	font-size: 2em;
 }
 
-h4 {
+h4, h6 {
 	font-weight: bold;
 	font-size: 1.25em;
+}
+
+h6 {
+	padding-top: 1rem;
+}
+
+small {
+	font-size: 0.5em;
 }
 
 /* ----- SKIP LINK ----- */
@@ -164,7 +172,6 @@ header {
         display: none;
 		position: absolute;
 		right: 0;
-		top: 3em;
 		background-image: linear-gradient(to left, var(--pink) 0%, var(--grape) 50%, var(--navy) 100%);
 	}
 
@@ -187,7 +194,7 @@ header {
 	}
 
 	nav a:visited { 
-		color: var(--blackhole);
+		color: var(--grape);
 	}
 
 /* ----- MAIN ----- */
@@ -220,11 +227,12 @@ header {
 	display: block;
 	margin: auto;
 	padding: 0.75em;
-	width: 25%;
+	width: 50%;
 }
 
 .tileBtn:hover, .tileBtn:focus {
-	box-shadow: 5px 5px 15px var(--white);
+	color: var(--teal);
+	background-color: var(--white);
 }
 
 /*--- MAP ---*/
@@ -267,6 +275,7 @@ footer {
 	background-image: linear-gradient(to left, var(--pink) 0%, var(--grape) 50%, var(--navy) 100%);
 	color: var(--white);
 	text-align: center;
+	padding: 1rem;
 }
 
 footer address a {
@@ -282,27 +291,32 @@ footer address a:visited{
 	width: 44px;
 }
 
-input[type="submit"] {
+#subBtnWrapper {
+	width: 25rem;
+	max-width: 80%;
+	position: relative;
+	margin: 1.5rem auto;
+}
+
+#subBtnWrapper input {
+	padding: 1rem;
+	border-radius: 90px;
+	border: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#subBtnWrapper button {
 	color: var(--white);
 	background-color: var(--gold);
 	text-transform: uppercase;
 	font-weight: bold;
 	border-radius: 90px;
-	border-color: var(--gold);
-	padding: 1rem 0.5rem;
-	box-shadow: 5px 5px 15px var(--blackhole);
-}
-
-input[type="submit"]:hover, input[type="submit"]:focus {
-	box-shadow: 5px 5px 15px var(--white);
-}
-
-input[type="email"] {
+	border: none;
 	padding: 1rem;
-	border-radius: 90px;
-	border-color: var(--gold);
-	width: 25rem;
-	max-width: 90%;
+	position: absolute;
+	right: 0;
+	height: 100%;
 }
 
 /* ----- ADDITIONAL CLASSES ----- */

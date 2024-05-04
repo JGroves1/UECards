@@ -54,7 +54,7 @@
             <!-- HERO SLIDESHOW --> 
             <div class="heroSlides">
                     <!-- image 1 from https://tcg.pokemon.com/en-us/expansions/temporal-forces/ -->
-                    <img src="images/temporal-forces-large-fallback_EDIT.jpg" alt="" class="slide active"> 
+                    <img src="images/temporal-forces-large-fallback_EDIT.jpg" alt="Pokémon TCG Temporal Forces promo image featuring Suicune" class="slide active"> 
                     <!-- image 2 tbd-->
                     <img src="" alt="" class="slide">
                     <!-- image 3 tbd-->
@@ -63,6 +63,7 @@
 
             <section id="cards" class="tile"> 
                 <h3>Cards</h3>
+                <!-- I need better quality images these are temporary // cannot forget to update alt text -->
                 <img src="images/cards.jpeg" alt="">
                 <p>We carry Pokémon, Weiss Schwarz, Bandai, Disney Lorcana, & more. Hunting for a specific card? Come check out our display case!</p>
                 <a href="https://www.uecards.com/s/shop" class="tileBtn">Shop</a>
@@ -70,6 +71,7 @@
 
             <section id="collectibles" class="tile">
                 <h3>Collectibles</h3>
+                <!-- I need better quality images these are temporary // cannot forget to update alt text -->
                 <img src="images/collectibles.jpg" alt="">
                 <p>Fuel your passion for collectibles with our delightful selection of Funko Pops! and other irresistible trinkets. From whimsical figurines to unique finds, our offerings are sure to captivate collectors.</p>
                 <a href="https://www.uecards.com/s/shop" class="tileBtn">Shop</a>
@@ -77,6 +79,7 @@
 
             <section id="community" class="tile">
                 <h3>Community</h3>
+                <!-- I need better quality images these are temporary // cannot forget to update alt text -->
                 <img src="images/community.jpeg" alt="">
                 <p>At our core, we're dedicated to fostering a vibrant and inclusive community. That's why we host a variety of engaging events that bring people together around shared interests and passions.</p>
                 <a href="events.html" class="tileBtn">Events</a>
@@ -113,28 +116,31 @@
             <address>
                 <a href="tel:314-200-9862">(314)200-9862</a>
             </address>
-            <h6>Follow Us</h6>
-            <a href="" id="whatnot"></a>
-                <img src="images/whatnot.png" alt="whatnot logo" id="whatnotLogo">
-            <a href="" id="facebook">
-                <!-- SVG from tablericons.com-->
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                </svg>
-            </a>
-            <a href="" id="tiktok">
-                <!-- SVG from tablericons.com-->
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
-                </svg>
-            </a>
-            <form>
+            <div id="socialsWrapper">
+                <h6>Follow Us</h6>
+                <a href="" id="whatnot"></a>
+                    <img src="images/whatnot.png" alt="whatnot logo" id="whatnotLogo">
+                <a href="" id="facebook">
+                    <!-- SVG from tablericons.com-->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+                <a href="" id="tiktok">
+                    <!-- SVG from tablericons.com-->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                    </svg>
+                </a>
+            </div>
+            <div id="subBtnWrapper">
                 <label for="email" class="sr-only">Email</label>
                 <input id="email" type="email" autocomplete="email" placeholder="Join Our Mailing List" required>
-                <input type="submit" name="submit" value="Subscribe">
-            </form>
+                <button>Subscribe</button>
+                <!-- <input type="submit" name="submit" value="Subscribe"> -->
+            </div>
             <br>
             <small>Copyright &copy; 2024 // Janessa Groves</small>
         </footer>
