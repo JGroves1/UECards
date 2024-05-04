@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Janessa Groves">
+        <meta name="description" content="Unique Emporium Cards & Games store in Saint Louis MO, buy sell and trade card games such as Pokemon TCG, Weiss Schwarz, & Bandai">
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        
+        <!-- I NEED TO INSERT OPEN GRAPH/SOCIAL MEDIA META TAGS HERE-->
+        
+        <!-- LINKS -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="images/UELogo_favicon.png">
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+       
+        <title>Unique Emporium</title>
+    </head>
+    <body>
+        <a href="#main" id="skip">Skip to Main Content</a>
+        <header>
+            <a href="index.html" class="logo" aria-label="home page"><img src="images/UELogo_500.png" alt="Unique Emporium astronaut logo" class="logo"></a>
+            <h1>Unique Emporium</h1>
+            <nav>
+                <div id="hamburgerMenu">
+                    <h2 class="sr-only">Main Navigation</h2>
+                    <input name="hamburger" id="hamburger" type="checkbox">
+                    <label for="hamburger">
+                        <!-- hamburger menu svg from tablericons.com -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                        </svg>
+                    </label>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="https://www.uecards.com/s/shop">Shop</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- HERO SLIDESHOW --> 
+            <div class="heroSlides">
+                    <!-- image 1 from https://tcg.pokemon.com/en-us/expansions/temporal-forces/ -->
+                    <img src="images/temporal-forces-large-fallback_EDIT.jpg" alt="" class="slide active"> 
+                    <!-- image 2 tbd-->
+                    <img src="" alt="" class="slide">
+                    <!-- image 3 tbd-->
+                    <img src="" alt="" class="slide">               
+            </div>
+
+            <section id="cards" class="tile"> 
+                <h3>Cards</h3>
+                <img src="images/cards.jpeg" alt="">
+                <p>We carry Pokémon, Weiss Schwarz, Bandai, Disney Lorcana, & more. Hunting for a specific card? Come check out our display case!</p>
+                <a href="https://www.uecards.com/s/shop" class="tileBtn">Shop</a>
+            </section>
+
+            <section id="collectibles" class="tile">
+                <h3>Collectibles</h3>
+                <img src="images/collectibles.jpg" alt="">
+                <p>Fuel your passion for collectibles with our delightful selection of Funko Pops! and other irresistible trinkets. From whimsical figurines to unique finds, our offerings are sure to captivate collectors.</p>
+                <a href="https://www.uecards.com/s/shop" class="tileBtn">Shop</a>
+            </section>
+
+            <section id="community" class="tile">
+                <h3>Community</h3>
+                <img src="images/community.jpeg" alt="">
+                <p>At our core, we're dedicated to fostering a vibrant and inclusive community. That's why we host a variety of engaging events that bring people together around shared interests and passions.</p>
+                <a href="events.html" class="tileBtn">Events</a>
+            </section>
+
+            <section id="findUs">
+            <h2>Find Us</h2>    
+                <!-- GOOGLE MAP -->
+                <div id="mapContainer">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21028.00806544106!2d-90.35753707325878!3d38.499748138184074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8c92f4b20b847%3A0x7f86c792fd2a03f9!2sUnique%20Emporium!5e0!3m2!1sen!2sus!4v1714162117189!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <h4>Unique Emporium</h4>
+                <address>
+                    4530 Lemay Ferry, Suite F<br>
+                    St Louis, Missouri 63129<br>
+                    <a href="tel:314-200-9862">(314)200-9862</a>
+                </address>
+            
+                <h4>Hours</h4>
+                <ul class="hours">
+                    <li>Mon Closed</li>
+                    <li>Tues 2:00pm - 8:00pm</li>
+                    <li>Wed 2:00pm - 8:00pm</li>
+                    <li>Thurs 2:00pm - 8:00pm</li>
+                    <li>Fri 2:00pm - 9:00pm</li>
+                    <li>Sat 12:00pm - 6:00pm</li>
+                    <li>Sun Closed</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Unique Emporium</p>
+            <address>
+                <a href="tel:314-200-9862">(314)200-9862</a>
+            </address>
+            <h6>Follow Us</h6>
+            <a href="" id="whatnot"></a>
+                <img src="images/whatnot.png" alt="whatnot logo" id="whatnotLogo">
+            <a href="" id="facebook">
+                <!-- SVG from tablericons.com-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+            <a href="" id="tiktok">
+                <!-- SVG from tablericons.com-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                </svg>
+            </a>
+            <form>
+                <label for="email" class="sr-only">Email</label>
+                <input id="email" type="email" autocomplete="email" placeholder="Join Our Mailing List" required>
+                <input type="submit" name="submit" value="Subscribe">
+            </form>
+            <br>
+            <small>Copyright &copy; 2024 // Janessa Groves</small>
+        </footer>
+    </body>
+</html>
