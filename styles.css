@@ -160,6 +160,13 @@ header {
 	padding-left: 0.25rem;
 }
 
+.lgView {
+	display: none;
+}
+
+.smView {
+	display: block;
+}
     /* ----- NAV ----- */
 	nav {
 		display: block;
@@ -199,8 +206,8 @@ header {
 		color: var(--grape);
 	}
 	
-	/* ----- HAMBURGER MENU INSPIRED BY WEB DEV SIMPLIFIED----- */
-	/* https://www.youtube.com/watch?v=dAIVbLrAb_U&t=551s */
+	/* ----- HAMBURGER MENU INSPIRED BY WEB DEV SIMPLIFIED ----- */
+	/* https://youtu.be/dAIVbLrAb_U? */
 	.hMenu {
 		display: flex;
 		flex-direction: column;
@@ -393,6 +400,17 @@ footer address a:visited{
 /* ----- ADDITIONAL IDS ----- */
 
 /* ----- MEDIA QUERIES ----- */
+
+/* --- LARGE ENOUGH PHONE --- */
+@media screen and (min-width: 414px){
+	 .lgView {
+		display: block;
+	}
+
+	.smView {
+		display: none;
+	}
+}
 
 /* --- TABLET --- */
 @media screen and (min-width: 768px){
