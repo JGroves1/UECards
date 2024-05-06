@@ -92,7 +92,7 @@ h1, h2, h6, nav, .tileBtn, #subBtnWrapper button {
 	font-family: var(--orb-font);
 }
 
-h3, h4, p, small, address, .hours li, input {
+h3, h4, p, small, address, .hours, input, span {
 	font-family: var(--bitter-font); 
 	line-height: 1.5em;
 }
@@ -390,6 +390,10 @@ footer address a:visited{
 	height: 100%;
 }
 
+.errorMessage {
+	display: none;
+}
+
 /* ----- ADDITIONAL CLASSES ----- */
 .sr-only {
     position: absolute;
@@ -399,6 +403,10 @@ footer address a:visited{
     margin: 0;
     overflow: hidden;
     clip-path: inset(50%);
+}
+
+#today {
+	color: var(--gold);
 }
 
 /* ----- ADDITIONAL IDS ----- */

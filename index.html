@@ -91,14 +91,14 @@
                 </address>
             
                 <h4>Hours</h4>
-                <ul class="hours">
-                    <li>Mon Closed</li>
-                    <li>Tues 2:00pm - 8:00pm</li>
-                    <li>Wed 2:00pm - 8:00pm</li>
-                    <li>Thurs 2:00pm - 8:00pm</li>
-                    <li>Fri 2:00pm - 9:00pm</li>
-                    <li>Sat 12:00pm - 6:00pm</li>
-                    <li>Sun Closed</li>
+                <ul>
+                    <li class="hours">Sun Closed</li>
+                    <li class="hours">Mon Closed</li>
+                    <li class="hours">Tues 2:00pm - 8:00pm</li>
+                    <li class="hours">Wed 2:00pm - 8:00pm</li>
+                    <li class="hours">Thurs 2:00pm - 8:00pm</li>
+                    <li class="hours">Fri 2:00pm - 9:00pm</li>
+                    <li class="hours">Sat 12:00pm - 6:00pm</li>
                 </ul>
             </section>
         </main>
@@ -132,10 +132,12 @@
                 </a>
             </div>
             <div id="subBtnWrapper">
-                <label for="email" class="sr-only">Email</label>
-                <input id="email" type="email" autocomplete="email" placeholder="Join Our Mailing List" required>
-                <button>Subscribe</button>
-                <!-- <input type="submit" name="submit" value="Subscribe"> -->
+                <form id="subscribe" action="#">
+                    <label for="email" class="sr-only">Email</label>
+                    <span class="errorMessage">Please enter a valid email.</span>
+                    <input id="subEmail" type="email" autocomplete="email" placeholder="Join Our Mailing List" required>
+                    <button type="submit" id="subBtn">Subscribe</button>
+                </form>
             </div>
             <br>
             <small>Copyright &copy; 2024 // Janessa Groves</small>
