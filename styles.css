@@ -415,6 +415,7 @@ footer address a:visited{
 	border: none;
 	width: 100%;
 	box-sizing: border-box;
+	line-height: 0;
 }
 
 #subBtnWrapper button {
@@ -427,10 +428,14 @@ footer address a:visited{
 	padding: 1rem;
 	position: absolute;
 	right: 0;
-	height: 100%;
+	cursor: pointer;
 }
 
 .errorMessage {
+	display: none;
+}
+
+.successMessage {
 	display: none;
 }
 
@@ -445,7 +450,7 @@ footer address a:visited{
     clip-path: inset(50%);
 }
 
-#today {
+.today {
 	color: var(--gold);
 }
 

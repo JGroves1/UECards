@@ -57,7 +57,7 @@
     let day = today.getDay();
     const hours = document.querySelectorAll(".hours");
     let todaysHours = hours[day];
-    todaysHours.setAttribute("id", "today");
+    todaysHours.classList.add("today");
 
-// subscribe validation
+// subscribe validation/functionality would go here
  
