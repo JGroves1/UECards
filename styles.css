@@ -57,7 +57,7 @@ table {
 }
 
 /* ----- VARIABLES ----- */
-:root{
+:root {
 	/* COLORS */
 	--blackhole: #0D1F26;
 	--gold: #D9A138;
@@ -400,6 +400,7 @@ footer address a:visited{
 
 .socialIcon {
 	padding: 0.5rem;
+	text-decoration: none;
 }
 
 #subBtnWrapper {
