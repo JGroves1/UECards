@@ -23,11 +23,11 @@
         <title>Unique Emporium</title>
     </head>
     <body>
-        <a href="#main" id="skip">Skip to Main Content</a>
-        <header>
-            <a href="index.html" class="logo" aria-label="home page"><img src="images/UELogo_500.png" alt="Unique Emporium astronaut logo" class="logo"></a>
-            <h1 class="lgView">Unique Emporium</h1>
-            <h1 class="smView">UE</h1>
+        <a href="#mainAbout" id="skip">Skip to Main Content</a>
+        <header id="top">
+                <a href="index.html" class="logo" aria-label="home page"><img src="images/UELogo_500.png" alt="Unique Emporium astronaut logo" class="logo"></a>
+                <h1 class="lgView">Unique Emporium</h1>
+                <h1 class="smView">UE</h1>
             <nav aria-label="primary navigation">
                 <h2 class="sr-only">Main Navigation</h2>
                 <label for="hamburger" class="hMenu">
@@ -43,73 +43,85 @@
         </header>
 
         <main>
-            <nav aria-label="secondary navigation">
-                <h2 class="sr-only">Secondary Navigation</h2>
-                <ul>
-                    <li><a href="#ourStory">Our Story</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#policies">Policies</a></li>
-                </ul>
-            </nav>
-
-            <img src="images/mural.jpg" alt="Unique Emporium mural of an astronaut playing cards in a purple cloud of space">
-            <section id="ourStory">
-                <h2 class="sr-only">Our Story</h2>
-                <!-- a very text heavy history right here -->
-                    <p>At Unique Emporium, we celebrate the power of nostalgia, the thrill of collecting, and the joy of friendly competition. Our shelves are stocked with a range of trading card games (TCGs), including One Piece, Pokémon, Disney Lorcana, and more. We also offer Funko Pops and various collectibles to fuel your fandom!</p>
-                    <p>Since we opened in August 2022, we’ve been on a mission to be more than a TCG retail shop. We regularly host events; we want to build a vibrant community where players can gather, trade, and compete in a friendly, inclusive environment. Whether you're a seasoned player or new to the world of TCGs, we invite you to join us.</p>
-                    <p>Co-founders Dave Nguyen & Arif Kukic’s journey began in 2011  when they met while serving in the U.S. Navy. Their shared passion for TCGs and a desire for entrepreneurial freedom led them to envision UE. As Dave puts it, "It was motivating to be your own boss, so you don't get yelled at for playing with them at 'work'!" Driven by this dream, Dave & Arif spent many months dedicated to making it reality.</p>
-                    <p>Today, if you ask Dave & Arif their favorite TCG, they’d likely say One Piece due to their competitive play. Yet they have an appreciation for all the TCGs UE stocks. Dave says, "The nostalgia it offers with each pack, giving you a piece of your childhood back. That, and it could be seen as an investment piece overall."</p>
-                    <p>Looking to the future, Dave & Arif aspire for Unique Emporium to be known as a healthy community space where like-minded collectors can share their passion and build lasting connections. Reflecting on the growth of UE and the community it has fostered has been the most rewarding part of their journey. From its humble beginnings to where it stands today, Unique Emporium continues to evolve. We are inspired by the dedication of our owners and the support of our growing community. Come be a part of our family!</p>
-            </section>
-            
-            <section id="location">
-                <h2>Location</h2>
-                <!-- GOOGLE MAP -->
-                <div id="locationContainer">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21028.00806544106!2d-90.35753707325878!3d38.499748138184074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8c92f4b20b847%3A0x7f86c792fd2a03f9!2sUnique%20Emporium!5e0!3m2!1sen!2sus!4v1714162117189!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <h4>Unique Emporium</h4>
-                <address>
-                    4530 Lemay Ferry, Suite F<br>
-                    St Louis, Missouri 63129<br>
-                    <a href="tel:314-200-9862">(314)200-9862</a>
-                </address>
-            
-                <h4>Hours</h4>
-                <ul>
-                    <li class="hours">Sun 12:00pm - 6:00pm</li>
-                    <li class="hours">Mon Closed</li>
-                    <li class="hours">Tues 2:00pm - 9:00pm</li>
-                    <li class="hours">Wed 2:00pm - 9:00pm</li>
-                    <li class="hours">Thurs 2:00pm - 9:00pm</li>
-                    <li class="hours">Fri 2:00pm - 9:00pm</li>
-                    <li class="hours">Sat 12:00pm - 6:00pm</li> 
-                </ul>
-            </section>
-            
-            <section id="policies">
-               <h2>Policies</h2>
-                <section id="returns">
-                    <h4>Returns</h4>
-                    <p>At Unique Emporium, we maintain a strict no-returns policy to ensure the integrity of our products. All sales are final, as we cannot guarantee that returned items haven't been tampered with. This policy helps us provide you with authentic, high-quality trading cards and collectibles. We appreciate your understanding and encourage you to make informed decisions before purchasing.</p>
+            <div id="mainAboutWrapper">
+                <nav aria-label="secondary navigation" class="secondaryNav">
+                    <h2 class="sr-only">Secondary Navigation</h2>
+                    <label for="secNav" class="secNav">
+                        <input type="checkbox" name="secNav" id="secNav">
+                        Sections
+                    </label>
+                    <ul class="secNavMenu">
+                        <li><a href="#ourStory">Our Story</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#policies">Policies</a></li>
+                    </ul>
+                </nav>
+                <img src="images/mural.jpg" alt="Unique Emporium mural of an astronaut playing cards in a purple cloud of space">
+                <section id="ourStory">
+                    <h2>Our Story</h2>
+                    <!-- a very text heavy history right here -->
+                        <p>At Unique Emporium, we celebrate the power of nostalgia, the thrill of collecting, and the joy of friendly competition. Our shelves are stocked with a range of trading card games (TCGs), including One Piece, Pokémon, Disney Lorcana, and more. We also offer Funko Pops and various collectibles to fuel your fandom!
+                        <br><br>Since we opened in August 2022, we’ve been on a mission to be more than a TCG retail shop. We regularly host events; we want to build a vibrant community where players can gather, trade, and compete in a friendly, inclusive environment. Whether you're a seasoned player or new to the world of TCGs, we invite you to join us.</p>
+                        
+                        <p>Co-founders Dave Nguyen & Arif Kukic’s journey began in 2011  when they met while serving in the U.S. Navy. Their shared passion for TCGs and a desire for entrepreneurial freedom led them to envision UE. As Dave puts it, "It was motivating to be your own boss, so you don't get yelled at for playing with them at 'work'!" Driven by this dream, Dave & Arif spent many months dedicated to making it reality.
+                        <br><br>Today, if you ask Dave & Arif their favorite TCG, they’d likely say One Piece due to their competitive play. Yet they have an appreciation for all the TCGs UE stocks. Dave says, "The nostalgia it offers with each pack, giving you a piece of your childhood back. That, and it could be seen as an investment piece overall."
+                        <br><br>Looking to the future, Dave & Arif aspire for Unique Emporium to be known as a healthy community space where like-minded collectors can share their passion and build lasting connections. Reflecting on the growth of UE and the community it has fostered has been the most rewarding part of their journey. From its humble beginnings to where it stands today, Unique Emporium continues to evolve. We are inspired by the dedication of our owners and the support of our growing community. Come be a part of our family!</p>
                 </section>
-
-                <section id="preorders">
-                    <h4>Preorders</h4>
-                    <p>Excited about upcoming releases? Our preorder system lets you secure items 3-6 months before their release date, depending on the product. Full payment is required upfront to confirm your order. We offer flexibility with cancellations up to two weeks before the release date, subject to a 10% restocking fee. This approach helps us manage inventory efficiently while giving you peace of mind for those must-have items.</p>
+                <section id="location">
+                    <h2>Location</h2>
+                    <!-- GOOGLE MAP -->
+                    <div id="locationContainer">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21028.00806544106!2d-90.35753707325878!3d38.499748138184074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8c92f4b20b847%3A0x7f86c792fd2a03f9!2sUnique%20Emporium!5e0!3m2!1sen!2sus!4v1714162117189!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <h4>Unique Emporium</h4>
+                    <address>
+                        4530 Lemay Ferry, Suite F<br>
+                        St Louis, Missouri 63129<br>
+                        <a href="tel:314-200-9862">(314)200-9862</a>
+                    </address>
+                
+                    <h4>Hours of Operation</h4>
+                    <ul>
+                        <li class="hours">Sun 12:00pm - 6:00pm</li>
+                        <li class="hours">Mon Closed</li>
+                        <li class="hours">Tues 2:00pm - 9:00pm</li>
+                        <li class="hours">Wed 2:00pm - 9:00pm</li>
+                        <li class="hours">Thurs 2:00pm - 9:00pm</li>
+                        <li class="hours">Fri 2:00pm - 9:00pm</li>
+                        <li class="hours">Sat 12:00pm - 6:00pm</li>
+                    </ul>
                 </section>
-
-                <section id="storeCredit">
-                    <h4>Store Credit</h4>
-                    <p>We love to buy, sell, and trade! Bring in your items, and we'll offer 60% of the current market value in store credit. Don't worry about expiration – your credit never expires and can be loaded onto a gift card for easy tracking. Prefer cash? We offer that option too, albeit at a lower rate. Our store credit system is designed to give you the best value and keep your collection fresh and exciting.</p>
+                
+                <section id="policies">
+                   <h2>Policies</h2>
+                    <section id="returns">
+                        <h4>Returns</h4>
+                        <p>At Unique Emporium, we maintain a strict no-returns policy to ensure the integrity of our products. All sales are final, as we cannot guarantee that returned items haven't been tampered with. This policy helps us provide you with authentic, high-quality trading cards and collectibles. We appreciate your understanding and encourage you to make informed decisions before purchasing.</p>
+                    </section>
+                    <section id="preorders">
+                        <h4>Preorders</h4>
+                        <p>Excited about upcoming releases? Our preorder system lets you secure items 3-6 months before their release date, depending on the product. Full payment is required upfront to confirm your order. We offer flexibility with cancellations up to two weeks before the release date, subject to a 10% restocking fee. This approach helps us manage inventory efficiently while giving you peace of mind for those must-have items.</p>
+                    </section>
+                    <section id="storeCredit">
+                        <h4>Store Credit</h4>
+                        <p>We love to buy, sell, and trade! Bring in your items, and we'll offer 60% of the current market value in store credit. Don't worry about expiration – your credit never expires and can be loaded onto a gift card for easy tracking. Prefer cash? We offer that option too, albeit at a lower rate. Our store credit system is designed to give you the best value and keep your collection fresh and exciting.</p>
+                    </section>
+                    <section id="eventsPolicy">
+                        <h4>Events</h4>
+                        <p> Join our vibrant community at Unique Emporium events! Stay updated on times and potential changes via our Facebook and Instagram. We foster an inclusive environment, so kindness is key. To keep things clean and safe, we ask that you bring no outside food (we sometimes provide snacks), use covered drinks away from gaming tables, and maintain good personal hygiene. Cheating results in immediate disqualification. Remember, repeated issues may lead to banning – we're all here to have fun and enjoy our shared passion for trading card games!</p>
+                    </section>
                 </section>
+            </div>
 
-                <section id="eventsPolicy">
-                    <h4>Events</h4>
-                    <p> Join our vibrant community at Unique Emporium events! Stay updated on times and potential changes via our Facebook and Instagram. We foster an inclusive environment, so kindness is key. To keep things clean and safe, we ask that you bring no outside food (we sometimes provide snacks), use covered drinks away from gaming tables, and maintain good personal hygiene. Cheating results in immediate disqualification. Remember, repeated issues may lead to banning – we're all here to have fun and enjoy our shared passion for trading card games!</p>
-                </section> 
-            </section>
+            <a href="#top" aria-label="Return to Top" id="topBtn">
+                <!-- SVG from tablericons.com-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-chevrons-up" width="75" height="75" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D9A138" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 15l3 -3l3 3" />
+                    <path d="M9 11l3 -3l3 3" />
+                    <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                </svg>
+            </a>
                
         </main>
 
@@ -122,7 +134,6 @@
             </div>
             <h6>Follow Us</h6>
             <div id="socialsWrapper">
-                <!-- I NEED TO INSERT THESE PROFILE LINKS!! -->
                 <a href="https://www.whatnot.com/user/unique_emporium" id="whatnot" class="socialIcon">
                     <img src="images/whatnot.png" alt="whatnot logo" id="whatnotLogo">
                 </a>  
@@ -153,7 +164,7 @@
             <div id="subBtnWrapper">
                 <!-- this isn't actually functional  -->
                 <form id="subscribe" action="#">
-                    <label for="email" class="sr-only">Email</label>
+                    <label for="subEmail" class="sr-only">Email</label>
                     <span class="errorMessage">Please enter a valid email.</span>
                     <span class="successMessage">Thank you for subscribing!</span>
                     <input id="subEmail" type="email" autocomplete="email" placeholder="Join Our Mailing List" required>

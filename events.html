@@ -23,7 +23,7 @@
         <title>Unique Emporium</title>
     </head>
     <body>
-        <a href="#main" id="skip">Skip to Main Content</a>
+        <a href="#mainEvents" id="skip">Skip to Main Content</a>
         <header>
             <a href="index.html" class="logo" aria-label="home page"><img src="images/UELogo_500.png" alt="Unique Emporium astronaut logo" class="logo"></a>
             <h1 class="lgView">Unique Emporium</h1>
@@ -42,7 +42,7 @@
             </nav>
         </header>
 
-        <main>
+        <main id="mainEvents">
             <h2>Events</h2>
             <!-- this is a lot of text -->
                 <p>Join us for an exciting lineup of weekly events! Dive into the realm of Disney Lorcana with fellow Illumineers each Saturday at 2pm. Unleash your Pokémon prowess during Pokémon League also on Saturdays from 1-3pm.  Immerse yourself in the digital world of Digimon during Open Play Wednesdays from 6-8pm. Set sail on a thrilling One Piece adventure during Open Play Thursdays from 6-9pm.</p>
@@ -85,7 +85,6 @@
             </div>
             <h6>Follow Us</h6>
             <div id="socialsWrapper">
-                <!-- I NEED TO INSERT THESE PROFILE LINKS!! -->
                 <a href="https://www.whatnot.com/user/unique_emporium" id="whatnot" class="socialIcon">
                     <img src="images/whatnot.png" alt="whatnot logo" id="whatnotLogo">
                 </a>  
@@ -116,7 +115,7 @@
             <div id="subBtnWrapper">
                 <!-- this isn't actually functional  -->
                 <form id="subscribe" action="#">
-                    <label for="email" class="sr-only">Email</label>
+                    <label for="subEmail" class="sr-only">Email</label>
                     <span class="errorMessage">Please enter a valid email.</span>
                     <span class="successMessage">Thank you for subscribing!</span>
                     <input id="subEmail" type="email" autocomplete="email" placeholder="Join Our Mailing List" required>

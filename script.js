@@ -1,4 +1,10 @@
 'use strict';
+// today's hours
+const today = new Date();
+let day = today.getDay();
+const hours = document.querySelectorAll(".hours");
+let todaysHours = hours[day];
+todaysHours.classList.add("today");
 
 // hero slideshow
     // acquire elements
@@ -51,13 +57,6 @@
 
     // automate it
     setInterval(nextSlide, 5000);
-
-// today's hours
-    const today = new Date();
-    let day = today.getDay();
-    const hours = document.querySelectorAll(".hours");
-    let todaysHours = hours[day];
-    todaysHours.classList.add("today");
 
 // subscribe validation/functionality would go here
  
