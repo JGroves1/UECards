@@ -44,19 +44,23 @@
 
         <main>
             <div id="mainAboutWrapper">
-                <nav aria-label="secondary navigation" class="secondaryNav">
-                    <h2 class="sr-only">Secondary Navigation</h2>
-                    <label for="secNav" class="secNav">
-                        <input type="checkbox" name="secNav" id="secNav">
-                        Sections
-                    </label>
-                    <ul class="secNavMenu">
-                        <li><a href="#ourStory">Our Story</a></li>
-                        <li><a href="#location">Location</a></li>
-                        <li><a href="#policies">Policies</a></li>
-                    </ul>
-                </nav>
-                <img src="images/mural.jpg" alt="Unique Emporium mural of an astronaut playing cards in a purple cloud of space">
+                <div id="navImgWrapper">
+                    <nav aria-label="secondary navigation" class="secondaryNav">
+                        <h2 class="sr-only">Secondary Navigation</h2>
+                        <label for="secNav" class="secNav">
+                            <input type="checkbox" name="secNav" id="secNav">
+                            Sections
+                        </label>
+                        <ul class="secNavMenu">
+                            <li><a href="#ourStory">Our Story</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#policies">Policies</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/UE_wordmark_light.png" alt="Unique Emporium's logo wordmark featuring Unique in the brand's black hole color and Emporium in the brand's signature gold. The i's are marked with the brand's star in opposite colors.">
+                    <img src="images/mural.jpg" alt="Unique Emporium mural of an astronaut playing cards in a purple cloud of space">
+                </div>
+
                 <section id="ourStory">
                     <h2>Our Story</h2>
                     <!-- a very text heavy history right here -->
@@ -67,6 +71,7 @@
                         <br><br>Today, if you ask Dave & Arif their favorite TCG, they’d likely say One Piece due to their competitive play. Yet they have an appreciation for all the TCGs UE stocks. Dave says, "The nostalgia it offers with each pack, giving you a piece of your childhood back. That, and it could be seen as an investment piece overall."
                         <br><br>Looking to the future, Dave & Arif aspire for Unique Emporium to be known as a healthy community space where like-minded collectors can share their passion and build lasting connections. Reflecting on the growth of UE and the community it has fostered has been the most rewarding part of their journey. From its humble beginnings to where it stands today, Unique Emporium continues to evolve. We are inspired by the dedication of our owners and the support of our growing community. Come be a part of our family!</p>
                 </section>
+
                 <section id="location">
                     <h2>Location</h2>
                     <!-- GOOGLE MAP -->
@@ -165,7 +170,7 @@
                 <!-- this isn't actually functional  -->
                 <form id="subscribe" action="#">
                     <label for="subEmail" class="sr-only">Email</label>
-                    <span class="errorMessage">Please enter a valid email.</span>
+                    <span class="subErrorMessage">Please enter a valid email.</span>
                     <span class="successMessage">Thank you for subscribing!</span>
                     <input id="subEmail" type="email" autocomplete="email" placeholder="Join Our Mailing List" required>
                     <button type="submit" id="subBtn">Subscribe</button>
