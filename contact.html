@@ -46,13 +46,14 @@
           <h2>Contact Us</h2>
           <p>Have a question, suggestion, or just want to connect? We'd love to hear from you. Use this form or reach out to us on our socials. We're here to listen. </p>
 
-          <form id="contactForm">
+          <!-- added novalidate because I wrote JavaScript I would like to handle this // also this form goes nowhere -->
+          <form id="contactForm" action="#" novalidate>
             <label for="name">Name<span class="required">*</span></label>
             <span class="errorMessage">Please enter your name.</span>
             <input type="text" name="name" id="name" autocomplete="name" placeholder="Full Name">
             <label for="email">Email<span class="required">*</span></label>
             <span class="errorMessage">Please enter a valid email.</span>
-            <input type="email" name="email" id="email" placeholder="name@email.com">
+            <input type="email" autocomplete="email" name="email" id="email" placeholder="name@email.com">
             <label for="message">Message<span class="required">*</span></label>
             <span class="errorMessage">Please write us a message.</span>
             <textarea name="message" id="message" placeholder="How can we help you?"></textarea>
@@ -99,8 +100,8 @@
                 </a>
             </div>
             <div id="subBtnWrapper">
-                <!-- this isn't actually functional  -->
-                <form id="subscribe" action="#">
+                <!-- this isn't actually functional  // also added novalidate bc I wrote JS for it -->
+                <form id="subscribe" action="#" novalidate>
                     <label for="subEmail" class="sr-only">Email</label>
                     <span class="subErrorMessage">Please enter a valid email.</span>
                     <span class="successMessage">Thank you for subscribing!</span>
