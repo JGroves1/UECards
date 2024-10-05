@@ -26,8 +26,8 @@
         <a href="#mainEvents" id="skip">Skip to Main Content</a>
         <header id="top">
             <a href="index.html" class="logo" aria-label="home page"><img src="images/UELogo_500.png" alt="Unique Emporium astronaut logo" class="logo"></a>
-            <h1 class="lgView">Unique Emporium</h1>
-            <h1 class="smView">UE</h1>
+            <h1 class="lgView"><a href="index.html" aria-label="home page">Unique Emporium</a></h1>
+            <h1 class="smView"><a href="index.html" aria-label="home page">UE</a></h1>
             <nav>
                 <h2 class="sr-only">Main Navigation</h2>
                 <label for="hamburger" class="hMenu">
@@ -37,7 +37,15 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="https://www.uecards.com/s/shop">Shop</a></li>
+                    <li><a href="https://www.uecards.com/s/shop" rel="noreferrer">Shop
+                        <!-- external link icon svg from tablericons.com -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#f20ea8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                            <path d="M11 13l9 -9" />
+                            <path d="M15 4h5v5" />
+                        </svg>
+                    </a></li>
                 </ul>
             </nav>
         </header>
@@ -120,7 +128,7 @@
                             </svg>
                         </button>
                         <p class="eventDesc">Attention all trainers! Build your strongest deck and get ready for an afternoon of battles and friendly competition. Our inclusive league welcomes players of all ages and experience levels.</p>
-                        <!-- as a general note -- I would use event specific links not this generic link on listings if this wasn't all hypothetical -->
+                        <!-- as a general note: I would use event specific links not this generic link on listings if this wasn't all hypothetical -->
                         <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
                     </div>
                 </section>
@@ -368,7 +376,14 @@
                 </section>
 
                 <!-- IF THERE ARE NO EVENTS TO DISPLAY -->
-                <span id="noMsg">no events listed</span>
+                <span id="noMsg">no events listed
+                    <!-- tablericons.com sad calendar SVG was too perfect to not use! -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-sad" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#0D1F26" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12zm12 -4v4m-8 -4v4m-4 4h16m-9.995 3h.01m3.99 0h.01" />
+                        <path d="M10 18a3.5 3.5 0 0 1 4 0" />
+                    </svg>
+                </span>
 
                 <!-- MORE BUTTON -->
                 <button id="loadMoreBtn" aria-label="more">Show More Events</button>
