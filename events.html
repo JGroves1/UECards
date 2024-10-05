@@ -24,7 +24,7 @@
     </head>
     <body>
         <a href="#mainEvents" id="skip">Skip to Main Content</a>
-        <header>
+        <header id="top">
             <a href="index.html" class="logo" aria-label="home page"><img src="images/UELogo_500.png" alt="Unique Emporium astronaut logo" class="logo"></a>
             <h1 class="lgView">Unique Emporium</h1>
             <h1 class="smView">UE</h1>
@@ -45,35 +45,345 @@
         <main id="mainEvents">
             <h2>Events</h2>
             <!-- this is a lot of text -->
-                <p>Join us for an exciting lineup of weekly events! Dive into the realm of Disney Lorcana with fellow Illumineers each Saturday at 2pm. Unleash your Pokémon prowess during Pokémon League also on Saturdays from 1-3pm.  Immerse yourself in the digital world of Digimon during Open Play Wednesdays from 6-8pm. Set sail on a thrilling One Piece adventure during Open Play Thursdays from 6-9pm.</p>
-                <p>In addition to these regular events, we host special Trade Nights on occasion, providing a unique opportunity to expand your collection and connect with fellow enthusiasts. Unique Emporium loves to celebrate, from getting spooky for Halloween to our annual anniversary bash in August.</p> 
-                <p>Our welcoming community embraces players of all ages and skill levels for an unforgettable gaming experience filled with friendly competition and a shared passion.</p>
-                <p>Be sure to keep an eye on our social channels for updates about our events! For event policies, please check our About page.</p>
+                <p class="eventIntro">Join us for an exciting lineup of weekly events! Dive into the realm of Disney Lorcana with fellow Illumineers each Saturday at 2pm. Unleash your Pokémon prowess during Pokémon League also on Saturdays from 1-3pm.  Immerse yourself in the digital world of Digimon during Open Play Wednesdays from 6-8pm. Set sail on a thrilling One Piece adventure during Open Play Thursdays from 6-9pm.</p>
+                <br>
+                <p class="eventIntro">In addition to these regular events, we host special Trade Nights on occasion, providing a unique opportunity to expand your collection and connect with fellow enthusiasts. Unique Emporium loves to celebrate, from getting spooky for Halloween to our annual anniversary bash in August.</p>
+                <br>
+                <p class="eventIntro">Our welcoming community embraces players of all ages and skill levels for an unforgettable gaming experience filled with friendly competition and a shared passion.</p>
+                <br>
+                <p class="eventIntro">Be sure to keep an eye on our social channels for updates about our events! For event policies, please check our About page.</p>
+                <br>
 
-            <!-- this is probably going to change -->
-            <div class="monthDropdown">
-                <button class="dropBtn">Month</button>
-                <div class="dropMonths">
-                    <a href="#">June</a>
-                    <a href="#">July</a>
-                    <a href="#">August</a>
-                </div>
-            </div>
+            <!-- EVENT DROPDOWN SORTING -->             
+            <select name="months" id="monthsDropdown">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
 
-            <!-- one event just to get a feel for it -->
-            <section class="eventListing eventActive">
-                <section class="eventDateTime">
-                    <p class="eventMonth">Jun</p>
-                    <p class="eventDay">6</p>
-                    <p class="eventTime">6 PM</p>
+            <!-- even though there is only one year in this for now, this is added for future functionality in mind -->
+            <select name="year" id="yearDropdown">
+                <option value="2024">2024</option>
+            </select>
+
+            <section class="events">
+
+                <!-- this part is code heavy, but here is a commented out version of the event html so it's easy to add more -->
+
+                   <!-- dont forget to add the event month and year classes
+                    <section class="eventListing">
+                        <div class="eventDateTime">
+                            <p class="eventMonth"></p>
+                            <p class="eventDay"></p>
+                            <p class="eventTime"></p>
+                        </div>
+                        <div class="eventInfo">
+                            <h3>Event Name</h3>
+                            <button class="eventExpand"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M15 9l-3 3l-3 -3" />
+                                    <path d="M15 13l-3 3l-3 -3" />
+                                    <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                                </svg>
+                            </button>
+                            <p class="eventDesc"></p>
+                            <a class="RSVPbtn" href="">RSVP</a>
+                        </div>
+                    </section> -->
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">12</p>
+                        <p class="eventTime">1 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Pokémon League</h3>
+                        <!-- an expand for mobile friendly details -->
+                         <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Attention all trainers! Build your strongest deck and get ready for an afternoon of battles and friendly competition. Our inclusive league welcomes players of all ages and experience levels.</p>
+                        <!-- as a general note -- I would use event specific links not this generic link on listings if this wasn't all hypothetical -->
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
                 </section>
-                <h3>One Piece Open Play</h3>
-                <p class="eventDesc">Join fans of all ages and immerse yourself in the beloved anime series. Put your deck-building skills to the test as you compete against other members of our community.</p>
-                <!-- this button is not functional -->
-                <button class="RSVP">RSVP</button>
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">12</p>
+                        <p class="eventTime">2 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Lorcana Weekly Play</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Discover the magic of Disney Lorcana! No matter your skill level, come immerse yourself in the beloved Disney universes for an afternoon of friendly matches, strategic gameplay, and spellbinding fun.</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>                
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">16</p>
+                        <p class="eventTime">6 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Digimon Open Play</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Embrace the spirit of adventure as you forge new friendships and share your love for the iconic Digimon universe. Prepare your deck for an evening of strategic gameplay!</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">17</p>
+                        <p class="eventTime">6 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>One Piece Open Play</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Join fans of all ages and immerse yourself in the beloved anime series. Put your deck-building skills to the test as you compete against other members of our community.</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">20</p>
+                        <p class="eventTime">1 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Pokémon League</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Attention all trainers! Build your strongest deck and get ready for an afternoon of battles and friendly competition. Our inclusive league welcomes players of all ages and experience levels.</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">20</p>
+                        <p class="eventTime">2 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Lorcana Weekly Play</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Discover the magic of Disney Lorcana! No matter your skill level, come immerse yourself in the beloved Disney universes for an afternoon of friendly matches, strategic gameplay, and spellbinding fun.</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>                
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">23</p>
+                        <p class="eventTime">6 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Digimon Open Play</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Embrace the spirit of adventure as you forge new friendships and share your love for the iconic Digimon universe. Prepare your deck for an evening of strategic gameplay!</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">24</p>
+                        <p class="eventTime">6 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>One Piece Open Play</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Join fans of all ages and immerse yourself in the beloved anime series. Put your deck-building skills to the test as you compete against other members of our community.</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">27</p>
+                        <p class="eventTime">1 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Pokémon League</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Attention all trainers! Build your strongest deck and get ready for an afternoon of battles and friendly competition. Our inclusive league welcomes players of all ages and experience levels.</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <section class="eventListing 10 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Oct</p>
+                        <p class="eventDay">31</p>
+                        <p class="eventTime">5 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>UE Halloween Party!</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Spooky fun at Unique Emporium! Join us for treats, tricks, and haunted card battles. Costumes encouraged! Enjoy scary-sweets while you duel. Don't miss out on this out-of-this-world fun!</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>                
+
+                <section class="eventListing 11 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Nov</p>
+                        <p class="eventDay">3</p>
+                        <p class="eventTime">7 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>Monthly Trade Night</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Navigate our cosmic shop for our monthly all-ages trade night. Any TCG welcome. Grow your collection, forge friendships, and become part of our thriving galaxy of traders!</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <section class="eventListing 11 2024">
+                    <div class="eventDateTime">
+                        <p class="eventMonth">Nov</p>
+                        <p class="eventDay">7</p>
+                        <p class="eventTime">6 PM</p>
+                    </div>
+                    <div class="eventInfo">
+                        <h3>One Piece Open Play</h3>
+                        <button class="eventExpand">
+                            <!-- per usual svg from tablericons.com -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevrons-down" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00246d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 9l-3 3l-3 -3" />
+                                <path d="M15 13l-3 3l-3 -3" />
+                                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18z" />
+                            </svg>
+                        </button>
+                        <p class="eventDesc">Join fans of all ages and immerse yourself in the beloved anime series. Put your deck-building skills to the test as you compete against other members of our community.</p>
+                        <a class="RSVPbtn" href="https://www.facebook.com/uniqueemporiumstl/events">RSVP</a>
+                    </div>
+                </section>
+
+                <!-- IF THERE ARE NO EVENTS TO DISPLAY -->
+                <span id="noMsg">no events listed</span>
+
+                <!-- MORE BUTTON -->
+                <button id="loadMoreBtn" aria-label="more">Show More Events</button>
             </section>
 
-            <button id="loadMore">More</button>
+             <!-- RETURN TO TOP -->
+             <a href="#top" aria-label="Return to Top" id="topBtn">
+                <!-- SVG from tablericons.com-->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-chevrons-up" width="75" height="75" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D9A138" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 15l3 -3l3 3" />
+                    <path d="M9 11l3 -3l3 3" />
+                    <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                </svg>
+            </a>
         </main>
 
         <footer>
